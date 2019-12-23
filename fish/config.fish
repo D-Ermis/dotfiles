@@ -1,6 +1,5 @@
 set fish_greeting ""
 
-#set -x EDITOR "nvim"
 set -x CLICOLOR 1
 set -x LSCOLORS gxfxcxdxbxegedabagacad
 
