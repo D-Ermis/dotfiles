@@ -35,7 +35,7 @@ function fish_prompt
     end
 
     # new line
-	echo -s "$nWhite"
+	#echo -s "$nWhite"
 
     # user
     set -l userStyle "$nBlue"
@@ -152,7 +152,7 @@ function fish_prompt
     end
 
     # invite
-    echo -s "$resetColor"
+    #echo -s "$resetColor"
     if test "$lastStatus" -eq 0
         if test (id -u "$USER") -eq 0
             echo -sn "$userStyle»"
