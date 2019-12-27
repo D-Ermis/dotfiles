@@ -160,7 +160,7 @@ function fish_prompt
             echo -sn "$userStyle›"
         end
     else
-        echo -sn "$bRed⌦"
+        echo -sn "$bRed X"
     end
 
     echo -s "$resetColor "
