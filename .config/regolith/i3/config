@@ -50,7 +50,7 @@ bindsym $mod+Return exec $terminal_path
 bindsym $mod+Shift+Return exec /usr/bin/sensible-browser
 
 # start nautilus
-bindsym $mod+x exec nautilus
+bindsym $mod+x exec nautilus --no-desktop --new-window
 
 # kill focused window
 bindsym $mod+Shift+q kill

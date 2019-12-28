@@ -1,0 +1,20 @@
+[q]>[a]
+[w]>[z]
+[a]>[q]
+[z]>[w]
+[colon]>[m]
+[m]>[colon]
+[rspc]>[bspc]
+{hk1}>{x1}{-lwin}{1}{+lwin}
+{hk2}>{x1}{-lwin}{2}{+lwin}
+{hk3}>{x1}{-lwin}{3}{+lwin}
+{hk4}>{x1}{-lwin}{4}{+lwin}
+fn {hk1}>{x1}{g}{i}{t}{lspc}{a}{d}{d}{lspc}{hyph}{-lshft}{a}{+lshft}{ent}
+fn {hk2}>{x1}{g}{i}{t}{lspc}{c}{o}{m}{m}{i}{t}{lspc}{hyph}{m}{lspc}{-lshft}{apos}{+lshft}
+fn {hk3}>{x1}{g}{i}{t}{lspc}{p}{u}{s}{h}{ent}
+fn {hk4}>{x1}{g}{i}{t}{lspc}{p}{u}{l}{l}{ent}
+{hk0}>{x1}{-lwin}{-lshft}{ent}{+lshft}{+lwin}
+fn {2}>{x1}{-lctrl}{-lshft}{u}{+lctrl}{+lshft}{0}{0}{e}{9}{ent}
+fn {3}>{x1}{-lctrl}{-lshft}{u}{+lctrl}{+lshft}{0}{0}{e}{8}{ent}
+fn {5}>{x1}{-lctrl}{-lshft}{u}{+lctrl}{+lshft}{0}{0}{e}{7}{ent}
+fn {4}>{x1}{-lctrl}{-lshft}{u}{+lctrl}{+lshft}{0}{0}{e}{0}{ent}
