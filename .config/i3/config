@@ -1,15 +1,6 @@
 set $mod Mod4
 
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
 font pango:DejaVu Sans Mono 10
-
-# Before i3 v4.8, we used to recommend this one as the default:
-# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-# The font above is very space-efficient, that is, it looks good, sharp and
-# clear in small sizes. However, its unicode glyph coverage is limited, the old
-# X core fonts rendering does not support right-to-left and this being a bitmap
-# font, it doesn’t scale on retina/hidpi displays.
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -152,44 +143,20 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $bg-color	         #2f343f
-set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
-set $inactive-text-color #676E7D
-set $urgent-bg-color     #E53935
-
-# window colors
-#                       border              background         text                 indicator
-client.focused          $bg-color           $bg-color          $text-color          #00ff00
-client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
-
 hide_edge_borders both
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
 bar {
-        status_command i3blocks -c ~/.config/i3/i3blocks.conf
-	colors {
-		background $bg-color
-		separator #757575
-		#                  border             background         text
-		focused_workspace  $bg-color          $bg-color          $text-color
-		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
-	}
-	#font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-	#font pango:DejaVu Sans Mono 10
+        status_command i3status -c ~/.config/i3/i3status/i3status.conf
 }
 
 # Assign programs to their workspaces
 #assign [class="Firefox-esr"] $ws1
 #assign [class="Gnome-terminal"] $ws2
-assign [class="Code"] $ws3
+#assign [class="Code"] $ws3
 
 # start a web browser
 bindsym $mod+Shift+Return exec firefox-esr
+#bindsym $mod+Shift+Return exec chromium
 
 # start nautilus
 bindsym $mod+x exec nautilus
@@ -199,12 +166,12 @@ new_window pixel 1
 new_float pixel 1
 
 # window focus follows your mouse movements as the mouse crosses window borders
-focus_follows_mouse no
+focus_follows_mouse yes
 
 # Run programs when i3 starts
-exec firefox-esr
+#exec firefox-esr
 #exec i3-sensible-terminal
-exec redshift-gtk
+#exec redshift-gtk
 
 # Reboot computer
 bindsym $mod+Shift+b exec "i3-msg [class='.'] kill; sleep 5; systemctl reboot"
@@ -214,3 +181,6 @@ bindsym $mod+Shift+p exec "i3-msg [class='.'] kill; sleep 5; systemctl poweroff"
 
 # toggle split orientation
 bindsym $mod+BackSpace split toggle
+
+# Wallpaper
+exec_always feh --bg-scale /home/dogukan/Pictures/wallpaper.png
