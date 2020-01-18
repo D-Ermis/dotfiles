@@ -171,7 +171,7 @@ focus_follows_mouse yes
 # Run programs when i3 starts
 #exec firefox-esr
 #exec i3-sensible-terminal
-#exec redshift-gtk
+exec redshift-gtk
 
 # Reboot computer
 bindsym $mod+Shift+b exec "i3-msg [class='.'] kill; sleep 5; systemctl reboot"
