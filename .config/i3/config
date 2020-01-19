@@ -148,10 +148,11 @@ hide_edge_borders both
 bar {
         status_command i3status -c ~/.config/i3/i3status/i3status.conf
 	colors {
-		focused_workspace   #333333 #000000 #c14f41
-		#active_workspace   #333333 #5f676a #ffffff
-		#inactive_workspace #333333 #222222 #888888
-		#urgent_workspace   #2f343a #900000 #ffffff
+				    #border #background #text
+		focused_workspace   #333333 #222222 	#c14f41
+		active_workspace    #000000 #000000 	#ffffff
+		inactive_workspace  #000000 #000000 	#888888
+		#urgent_workspace   #2f343a #900000 	#ffffff
 	    }
 }
 
