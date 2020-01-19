@@ -1,4 +1,5 @@
 set $mod Mod4
+
 font pango:DejaVu Sans Mono 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -146,6 +147,12 @@ hide_edge_borders both
 
 bar {
         status_command i3status -c ~/.config/i3/i3status/i3status.conf
+	colors {
+		focused_workspace   #c14f41 #c14f41 #000000
+		#active_workspace   #333333 #5f676a #ffffff
+		#inactive_workspace #333333 #222222 #888888
+		#urgent_workspace   #2f343a #900000 #ffffff
+	    }
 }
 
 # Assign programs to their workspaces
