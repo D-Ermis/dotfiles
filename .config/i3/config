@@ -147,6 +147,7 @@ hide_edge_borders both
 
 bar {
         status_command i3status -c ~/.config/i3/i3status/i3status.conf
+	font pango:JetBrainsMono 10
 	colors {
 				    #border #background #text
 		focused_workspace   #333333 #222222 	#ffffff
